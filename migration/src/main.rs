@@ -4,4 +4,4 @@ use sea_orm_migration::prelude::*;
 async fn main() {
     dotenv::dotenv().ok();
     cli::run_cli(migration::Migrator).await;
-}
+:q
