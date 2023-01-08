@@ -216,13 +216,24 @@ dependencies = [
 name = "auth-todo"
 version = "0.1.0"
 dependencies = [
+ "auth-todo-derive",
  "axum",
  "dotenv",
  "migration",
  "sea-orm",
  "serde",
  "serde_json",
+ "thiserror",
  "tokio",
+]
+
+[[package]]
+name = "auth-todo-derive"
+version = "0.1.0"
+dependencies = [
+ "proc-macro-error",
+ "quote",
+ "syn",
 ]
 
 [[package]]
